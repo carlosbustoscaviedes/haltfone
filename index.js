@@ -32,6 +32,7 @@ iniciarExpress.listen( 5000, () => {
 
 
 
+
 /*-----importar rutas-------*/
 const rutas = require('./rutas/rutasImagenes');
 
