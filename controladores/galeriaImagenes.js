@@ -63,10 +63,20 @@ const guardarImagenes = (req, resp) => {
 //borrar imagenes
 const borrarImagenDB = (req, resp) => {
 
-    console.log("listo controlador borrar imagen")
+    let idFront = req.body.id
+    console.log(idFront)
+
+
+    modeloImagen.findOneAndDelete( { _id:idFront } )
+        .then( (respuestBorrado) => {
+
+            return resp.status(200).json({
+                status:"se ha borrado correctamente",
+                respuestBorrado
+            })
+        })
 
 }
-
 
 
 module.exports = {
