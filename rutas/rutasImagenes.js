@@ -12,7 +12,8 @@ const DocControlador = require('../controladores/galeriaImagenes')
 
 /*----creamos la ruta----*/
 usarRuta.post('/imagenes', DocControlador.guardarImagenes);
-usarRuta.get('/traerImagenes', DocControlador.listarImagenes)
+usarRuta.get('/traerImagenes', DocControlador.listarImagenes);
+usarRuta.delete('/borrarImagen', DocControlador.borrarImagenDB);
 
 
 

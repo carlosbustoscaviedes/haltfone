@@ -24,11 +24,12 @@ iniciarExpress.use( cors() );
 
 
 
+const PORT = process.env.PORT
 /*-------ejecutar servidor--------*/
-iniciarExpress.listen( 5000, () => {
+iniciarExpress.listen( "https://haltfone-galeria.onrender.com", () => {
     console.log("el puerto ya esta corriendo");
 
-} )
+})
 
 
 

@@ -28,7 +28,7 @@ const listarImagenes = (req, resp) => {
 
 
 
-
+// guardar imagenes
 const guardarImagenes = (req, resp) => {
 
   const imagen1 = req.body
@@ -59,8 +59,19 @@ const guardarImagenes = (req, resp) => {
 
 
 
+
+//borrar imagenes
+const borrarImagenDB = (req, resp) => {
+
+    console.log("listo controlador borrar imagen")
+
+}
+
+
+
 module.exports = {
 
     guardarImagenes,
-    listarImagenes
+    listarImagenes,
+    borrarImagenDB
 }
